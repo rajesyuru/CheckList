@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/rl1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp">
+        <CheckBox
+            android:id="@+id/cbDone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/tvActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Makan Pagi"
+            android:layout_toRightOf="@+id/cbDone"
+            android:layout_centerVertical="true"/>
+
+        <ImageView
+            android:id="@+id/ivDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_delete_black_24dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/rl1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorPrimaryDark" />
+</RelativeLayout>
