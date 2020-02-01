@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -32,7 +33,8 @@ public class AddChecklist extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-        if (item.getItemId() == R.id.menuAdd) {
+        if (item.getItemId() == R.id.itemSave) {
+            Log.d("!!!", "onOptionsItemSelected: X");
             Intent resultIntent = new Intent();
             resultIntent.putExtra("activity", etEditText.getText().toString());
             setResult(Activity.RESULT_OK, resultIntent);
