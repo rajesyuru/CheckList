@@ -29,4 +29,7 @@ dependencies {
 
     implementation 'androidx.recyclerview:recyclerview:1.1.0'
 
+    implementation "com.github.parse-community.Parse-SDK-Android:parse:1.22.1"
+
+
 }
